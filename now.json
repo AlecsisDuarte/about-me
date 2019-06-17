@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "me",
+  "name": "about-me",
   "builds": [
     {
       "src": "package.json",
