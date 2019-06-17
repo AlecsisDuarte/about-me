@@ -1,0 +1,100 @@
+.header_table>tr>td {
+    margin-right: 10px;
+}
+
+.header_name {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: var(--header-name-color);
+}
+
+.header_profession {
+    color: var(--header-profession-color);
+    font-size: 1.1em;
+    font-family: 'Fira Mono',
+        source-code-pro,
+        Menlo,
+        Monaco,
+        Consolas,
+        "Courier New",
+        monospace;
+    margin-top: 0px;
+}
+
+.header_grid {
+    padding: 10px;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(2, [col] auto);
+    grid-template-rows: repeat(2, [row] auto);
+}
+
+.header_box_name,
+.header_box_router {
+    grid-row: 1;
+}
+
+.header_box_router {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header_box_routes_container {
+    height: 0px;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+}
+
+.header_box_routes_container.ease-in {
+    height: 150px;
+}
+
+#fai_caret {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    transform: rotateZ(0deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+#fai_caret.rotate {
+    transform: rotateZ(180deg)
+}
+
+.fai_caret_button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a.route {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--header-menus-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 24px;
+    font-family: 'Fira Mono', source-code-pro, Menlo, Monaco, Consolas, monospace;
+}
+
+a.route.active {
+    color: var(--header-menu-active-color);
+    font-weight: bold;
+}
+
+a.route:hover {
+    color: var(--header-menus-hover-color);
+}
+
+@media (max-width: 750px) {
+    a.route {
+        display: block;
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+}

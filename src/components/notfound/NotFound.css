@@ -1,0 +1,16 @@
+.notfound_wrapper  {
+    text-align: center;
+}
+
+.notfound_title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.notfound_message {
+    font-size: 1.5em;
+}
+
+.notfound_icon {
+    font-size: 3em;
+}

@@ -1,0 +1,79 @@
+.resume_wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(1, [row] auto);
+    position: relative;
+    padding-bottom: var(--footer-height);
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-items: left;
+    justify-content: center;
+}
+
+.resume_work,
+.resume_education {
+    grid-column: 1;
+}
+
+.resume_skills,
+.resume_languages {
+    grid-column: 2;
+}
+
+.resume_skills,
+.resume_work {
+    grid-row: 1;
+}
+
+.resume_wrapper>div>.title {
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.resume_work,
+.resume_education,
+.resume_languages,
+.resume_skills {
+    box-shadow: 0 0 0 1px #333;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.work_content {
+    padding: 8px 14px;
+}
+
+.work_content > div > hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1px solid rgb(51, 51, 51);
+    border-style: solid none none;
+}
+
+.job_position {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 0px
+}
+
+.job_position>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.job_position>a:hover {
+    font-weight: bold;
+}
+
+.job_dates {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    color: var(--resume-job-date-color);
+}
+
+.job_description {
+    margin-top: 0px;
+}
