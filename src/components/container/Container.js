@@ -5,6 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from "../home/Home";
 import Resume from "../resume/Resume";
+import Projects from '../projects/Projects';
 import NotFound from "../notfound/NotFound";
 
 function Container({ location }) {
@@ -20,7 +21,8 @@ function Container({ location }) {
             <Switch location={location}>
               <Route exact path="/" component={Home} />
               <Route path="/resume" component={Resume} />
-              <Route component={NotFound}/>
+              <Route path="/projects" component={Projects} />
+              <Route component={NotFound} />
             </Switch>
           </section>
         </CSSTransition>
@@ -30,6 +32,7 @@ function Container({ location }) {
 }
 
 const Wrapper = styled.div`
+
   .fade-enter {
     opacity: 0.01;
   }
@@ -53,10 +56,17 @@ const Wrapper = styled.div`
   }
 
   section.route-section {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
-  }`;
+    padding-bottom: var(--footer-height);
+  }
+  @media (max-width: 750px) {
+    section.route-section {
+      padding-bottom: var(--footer-mobile-height);
+    }
+  }
+  `;
 
 export default withRouter(Container);

@@ -20,8 +20,8 @@ class App extends Component {
           <Router>
             <Header />
             <Container />
+            <Footer />
           </Router>
-          <Footer />
         </div>
       </Router>
     );
