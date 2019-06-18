@@ -39,7 +39,7 @@ class Header extends Component {
     }
 
     updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
+        this.setState({ width: window.outerWidth, height: window.outerHeight });
     }
 
     render() {
@@ -87,6 +87,10 @@ class Header extends Component {
     menuClicked(event, key) {
         const menus = document.getElementsByClassName("route");
         const id = event.target.id;
+        const caret = document.getElementById("fai_caret");
+        if (caret) {
+            this.handleChevronClick();
+        }
         for (let i = 0; i < menus.length; i++) {
             if (menus[i].id === id) {
                 menus[i].classList.add("active");
