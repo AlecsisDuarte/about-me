@@ -10,8 +10,8 @@ class Home extends Component {
                     <img className="home_avatar" src={me} alt="Avatar" />
                 </div>
                 <div className="home_information">
-                    <h1>Hello my name is Alexis.</h1>
-                    <p>I'm a <code>Computer Systems Engineer</code> with a passion for web and mobile development.</p>
+                    <h1>I'm Alexis.</h1>
+                    <p>A <code>Computer Systems Engineer</code> with a passion for web and mobile development.</p>
                     <p>In here you'll find some information about me and also some projects I've worked and/or still working on.</p>
                 </div>
             </div>
