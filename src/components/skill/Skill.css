@@ -1,0 +1,62 @@
+.skill__wrapper {
+    display: grid;
+    grid-template-columns: calc(100% - 90px)  90px;
+}
+
+.swing-in-bottom-fwd {
+    -webkit-animation: swing-in-bottom-fwd 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.3s both;
+    animation: swing-in-bottom-fwd 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.3s both;
+}
+.swing-in-bottom-fwd-2 {
+    -webkit-animation: swing-in-bottom-fwd 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
+    animation: swing-in-bottom-fwd 0.4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.4s both;
+}
+.swing-in-bottom-fwd-3 {
+    -webkit-animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
+    animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;
+}
+.swing-in-bottom-fwd-4 {
+    -webkit-animation: swing-in-bottom-fwd 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
+    animation: swing-in-bottom-fwd 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.6s both;
+}
+.swing-in-bottom-fwd-5 {
+    -webkit-animation: swing-in-bottom-fwd 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.7s both;
+    animation: swing-in-bottom-fwd 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.7s both;
+}
+
+
+@-webkit-keyframes swing-in-bottom-fwd {
+    0% {
+        -webkit-transform: rotateX(100deg);
+        transform: rotateX(100deg);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        opacity: 1;
+    }
+}
+
+@keyframes swing-in-bottom-fwd {
+    0% {
+        -webkit-transform: rotateX(100deg);
+        transform: rotateX(100deg);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        opacity: 1;
+    }
+}

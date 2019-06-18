@@ -1,29 +1,37 @@
 .resume_wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: calc(65% - 5px) calc(35% - 5px);
     grid-template-rows: repeat(1, [row] auto);
-    position: relative;
-    padding-bottom: var(--footer-height);
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-items: left;
-    justify-content: center;
+    padding: 10px;
 }
 
-.resume_work,
-.resume_education {
+.skills_content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, [row] auto);
+}
+
+.technologies_skills,
+.concept_skills {
     grid-column: 1;
 }
 
-.resume_skills,
-.resume_languages {
-    grid-column: 2;
+.technologies_skills {
+    grid-row: 1;
 }
 
-.resume_skills,
-.resume_work {
-    grid-row: 1;
+.concept_skills {
+    grid-row: 2;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 2;
 }
 
 .resume_wrapper>div>.title {
@@ -38,42 +46,161 @@
 .resume_skills {
     box-shadow: 0 0 0 1px #333;
     border-radius: 5px;
-    padding: 8px;
+    padding: 14px;
 }
 
-.work_content {
+.resume_skills,
+.resume_work {
+    margin-bottom: 10px;
+}
+
+.work_content,
+.skills_content,
+.languages_content,
+.education_content {
     padding: 8px 14px;
 }
 
-.work_content > div > hr {
+.work_content>div>hr,
+.education_content>div>hr {
     margin-left: 20px;
     margin-right: 20px;
     border-top: 1px solid rgb(51, 51, 51);
     border-style: solid none none;
 }
 
-.job_position {
-    font-size: 1.1em;
+.job_position,
+.edu_name {
+    font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 0px
 }
 
-.job_position>a {
+.job_position>a,
+.edu_name>a {
     text-decoration: none;
     color: inherit;
 }
 
-.job_position>a:hover {
+.job_position>a:hover,
+.edu_name>a:hover {
     font-weight: bold;
 }
 
-.job_dates {
-    margin-top: 0px;
+.job_dates,
+.edu_dates {
+    margin-top: 4px;
     margin-bottom: 4px;
     text-transform: uppercase;
     color: var(--resume-job-date-color);
 }
 
-.job_description {
+.job_description,
+.edu_description {
     margin-top: 0px;
+}
+
+
+.skill_subtitle {
+    text-transform: uppercase;
+    color: var(--resume-skill-subtitle-color);
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.languages_content {
+    font-size: 3.3em;
+    letter-spacing: 0.2em;
+    word-wrap: break-word;
+}
+
+
+.edu_degree {
+    font-style: italic;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1.1em;
+}
+
+.resume_pill {
+    background-color: white;
+    /* color: black; */
+    box-shadow: 0 0 0 1px #333;
+    border-radius: 7px;
+    padding: 1px 6px;
+    margin-left: 8px;
+}
+
+span.at {
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+span.at::after {
+    content: '|';
+}
+
+@media (max-width: 750px) {
+    .resume_wrapper {
+        grid-gap: 8px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, [row] auto);
+        padding: 8px;
+    }
+
+    .resume_skills,
+    .resume_education {
+        margin-bottom: 8px;
+    }
+
+    .left,
+    .right {
+        grid-column: 1;
+    }
+
+    .left {
+        grid-row: 1;
+    }
+
+    .right {
+        grid-row: 2;
+    }
+
+    .skills_content {
+        grid-gap: 16px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(1, [row] auto);
+    }
+
+    .technologies_skills,
+    .concept_skills {
+        grid-row: 1
+    }
+
+    .technologies_skills {
+        grid-column: 1;
+    }
+
+    .concept_skills {
+        grid-column: 2;
+    }
+
+}
+
+@media (max-width: 500px)  {
+    .skills_content {
+        grid-template-columns: 100%;
+    }
+    .technologies_skills,
+    .concept_skills {
+        grid-column: 1
+    }
+
+    .technologies_skills {
+        grid-row: 1;
+    }
+
+    .concept_skills {
+        grid-row: 2;
+    }
 }
