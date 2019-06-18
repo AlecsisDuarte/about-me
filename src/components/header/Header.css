@@ -96,6 +96,10 @@ a.route.active {
     font-weight: bold;
 }
 
+a.route.active::before {
+    content: '>';
+}
+
 a.route:hover {
     color: var(--header-menus-hover-color);
 }
@@ -115,7 +119,9 @@ a.route:hover {
 @media (max-width: 750px) {
     a.route {
         display: block;
-        border-bottom: 1px solid white;
-        width: 100%;
+        border-bottom: 1px dashed white;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
     }
 }
