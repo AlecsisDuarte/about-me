@@ -48,7 +48,7 @@ class Header extends Component {
                 <div className="header_grid">
                     <div className="header_box_name">
                         <p className="header_name">Alexis Duarte</p>
-                        <p className="header_profession code">SOFTWARE DEVELOPER</p>
+                        <div className="header_profession code"><div>SOFTWARE DEVELOPER</div><div className="cursorBlock">█</div></div>
                     </div>
                     <div className="header_box_router">
                         {this.getRoutes()}

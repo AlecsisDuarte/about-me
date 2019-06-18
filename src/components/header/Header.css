@@ -4,15 +4,16 @@
 
 .header_name {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.42em;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     color: var(--header-name-color);
 }
 
-.header_profession {
+.header_profession>div {
     color: var(--header-profession-color);
-    font-size: 1.1em;
+    font-size: 1.29em;
+    display: inline;
     font-family: 'Fira Mono',
         source-code-pro,
         Menlo,
@@ -20,7 +21,15 @@
         Consolas,
         "Courier New",
         monospace;
-    margin-top: 0px;
+    vertical-align: sub;
+}
+
+div.cursorBlock {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    font-size: 0.8em;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .header_grid {
@@ -89,6 +98,18 @@ a.route.active {
 
 a.route:hover {
     color: var(--header-menus-hover-color);
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 750px) {
