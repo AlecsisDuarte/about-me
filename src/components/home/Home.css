@@ -36,6 +36,21 @@
     width: 300px;
 }
 
+.downloadButton {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1em;
+    border: 1px solid #333;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.downloadButton:hover {
+    background-color: white;
+    color: black;
+}
+
 @media (max-width: 750px) {
 
     .home_wrapper {

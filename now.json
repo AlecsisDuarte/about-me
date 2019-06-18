@@ -21,6 +21,7 @@
     { "src": "/android-icon-96x96.png", "dest": "/android-icon-96x96.png" },
     { "src": "/android-icon-144x144.png", "dest": "/android-icon-144x144.png" },
     { "src": "/android-icon-192x192.png", "dest": "/android-icon-192x192.png" },
+    { "src": "/Alexis Duarte - CV.pdf", "dest": "/Alexis Duarte - CV.pdf" },
     { "src": "/asset-manifest.json", "dest": "/asset-manifest.json" },
     { "src": "/manifest.json", "dest": "/manifest.json" },
     { "src": "/precache-manifest.(.*)", "dest": "/precache-manifest.$1" },
