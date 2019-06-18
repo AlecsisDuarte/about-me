@@ -14,10 +14,11 @@
   --footer-content-color: rgb(68, 68, 68);
   --footer-content-hover-color: white;
   --footer-height: 70px;
-  --footer-mobile-height: 210px;
+  --footer-mobile-height: 220px;
 
   /* Resume */
   --resume-job-date-color: rgb(68, 68, 68);
+  --resume-skill-subtitle-color: rgb(68, 68, 68);
 }
 body {
   margin: 0;
