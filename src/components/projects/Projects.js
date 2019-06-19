@@ -19,7 +19,7 @@ class Projects extends Component {
             playstore: 'https://play.google.com/store/apps/details?id=com.duarte.fluttercourse',
             url: null,
             description: 'Application that allows you to publish your products and also view other users products with their price and position',
-            status: 'stalled',
+            status: 'active',
         },
         {
             name: 'Oky',
@@ -28,7 +28,24 @@ class Projects extends Component {
             url: null,
             description: 'Drowsiness prevental android application',
             status: 'stalled',
-        }
+        },
+        {
+            name: 'SGE Retriever',
+            github: 'https://github.com/AlecsisDuarte/retrieve-sge',
+            playstore: null,
+            url: null,
+            description: 'Little CLI to validate and retrieve my school control numbers',
+            status: 'stalled',
+        },
+        {
+            name: 'TextIDE',
+            github: 'https://github.com/AlecsisDuarte/AutomatasEditor',
+            playstore: null,
+            url: null,
+            description: 'Small text editor made for a school project using GTK3 toolkit',
+            status: 'stalled',
+        },
+
     ];
 
     render() {
