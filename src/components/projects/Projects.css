@@ -22,23 +22,6 @@
     text-align: center;
 }
 
-.projects_page>p>a {
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    border: 1px solid #333;
-    color: white;
-    background-color: black;
-    cursor: pointer;
-    white-space: nowrap;
-    padding: 0px 2px;
-}
-
-.projects_page>p>a:hover {
-    background-color: white;
-    color: black;
-}
-
 @media (max-width: 750px) {
     .projects_wrapper {
         grid-template-columns: repeat(2, [col] calc(50% - 4px));

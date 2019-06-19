@@ -30,8 +30,8 @@
 
 .project_links>a {
     color: var(--project-link-color);
-    font-size: 1.7em;
-    margin-right: 4px;
+    font-size: var(--project-link-size);
+    margin-right: var(--project-link-margin-right);
 }
 
 .project_links>a:hover {

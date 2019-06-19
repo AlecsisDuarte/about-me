@@ -3,6 +3,10 @@
     grid-template-columns: calc(100% - 90px)  90px;
 }
 
+.skill_level {
+    color: var(--resume-skills-level-color);
+}
+
 .swing-in-bottom-fwd {
     -webkit-animation: swing-in-bottom-fwd 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.3s both;
     animation: swing-in-bottom-fwd 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.3s both;

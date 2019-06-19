@@ -14,7 +14,7 @@ class Home extends Component {
                     <p>A <code>Computer Systems Engineer</code> with a passion for web and mobile development.</p>
                     <p>
                         In here you'll find some information about me and also some projects I've worked and/or still working on
-                        or you could just get my <button className="downloadButton code" onClick={this.downloadCV}>Curriculum Vitae</button> in PDF format
+                        or you could just get my <button className="inline_button" onClick={this.downloadCV}>Curriculum Vitae</button> in PDF format
                     </p>
                 </div>
             </div>

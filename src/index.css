@@ -3,32 +3,46 @@
   /* Header */
   --header-name-color: white;
   --header-profession-color: rgb(200, 200, 200);
-  --header-menus-color: rgb(68, 68, 68);
+  --header-menus-color: rgb(134, 134, 134);
   --header-menus-hover-color: white;
   --hedaer-menu-active-color: white;
 
   /* Footer */
   --footer-bg-color: rgb(17, 17, 17);
-  --footer-title-color: rgb(200, 200, 200);
+  --footer-title-color: rgb(134, 134, 134);
   --footer-icon-color: var(--footer-title-color);
-  --footer-content-color: rgb(68, 68, 68);
+  --footer-content-color: rgb(218, 218, 218);
   --footer-content-hover-color: white;
   --footer-height: 70px;
   --footer-mobile-height: 220px;
 
   /* Resume */
-  --resume-job-date-color: rgb(68, 68, 68);
-  --resume-skill-subtitle-color: rgb(68, 68, 68);
+  --resume-job-date-color: rgb(134, 134, 134);
+  --resume-skill-subtitle-color: rgb(134, 134, 134);
+  --resume-pills-bg-color: rgb(0, 118, 255);
+  --resume-pills-color: white;
+  --resume-skills-level-color:#f1e05a;
 
   /* Projects */
+  
   /* Project */
   --status-active-bg-color: rgb(80, 227, 194);
   --status-active-color: black;
   --status-stalled-bg-color: #f1e05a;
   --status-stalled-color: black;
-  --project-link-color: rgb(68, 68, 68);
+  --project-link-color: rgb(134, 134, 134);
+  --project-link-size: 1.8em;
+  --project-link-margin-right: 8px;
 
-
+  /* General */
+  --inline-button-bg-color: white;
+  --inline-button-color: black;
+  --inline-button-hover-bg-color: black;
+  --inline-button-hover-color: white;
+  --inline-button-border: 1px solid white;
+  --inline-button-border-radius: 5px;
+  --inline-button-font-size: 0.9em;
+  --inline-button-padding: 0px 4px;
 }
 body {
   margin: 0;
@@ -49,6 +63,23 @@ body {
   position: relative;
 }
 
+a.inline_button, button.inline_button {
+  text-decoration: none;
+  color: var(--inline-button-color);
+  background-color: var(--inline-button-bg-color);
+  border-radius: var(--inline-button-border-radius);
+  font-size: var(--inline-button-font-size);
+  border: var(--inline-button-border);
+  padding: var(--inline-button-padding);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+a.inline_button:hover,
+button.inline_button:hover {
+  background-color: var(--inline-button-hover-bg-color);
+  color: var(--inline-button-hover-color);
+}
 
 code {
   font-family: 'Fira Mono', source-code-pro,

@@ -34,7 +34,7 @@
     grid-column: 2;
 }
 
-.resume_wrapper>div>.title {
+.resume_wrapper>div>div>.title {
     font-size: 1.3em;
     margin-bottom: 0px;
     font-weight: bold;
@@ -123,8 +123,8 @@
 }
 
 .resume_pill {
-    background-color: white;
-    /* color: black; */
+    background-color: var(--resume-pills-bg-color);
+    color: var(--resume-pills-color);
     box-shadow: 0 0 0 1px #333;
     border-radius: 7px;
     padding: 1px 6px;
