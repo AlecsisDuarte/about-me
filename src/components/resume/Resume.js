@@ -9,10 +9,10 @@ class Resume extends Component {
     skills = {
         'technologies': [
             { name: 'Flutter', level: 'advanced' },
-            { name: 'NodeJS', level: 'advanced' },
             { name: 'RDBMS', level: 'advanced' },
+            { name: 'ASP.NET', level: 'advanced' },
+            { name: 'NodeJS', level: 'proficient' },
             { name: 'Android', level: 'proficient' },
-            { name: 'ASP.NET', level: 'proficient' },
             { name: 'Linux', level: 'proficient' },
             { name: 'Git', level: 'proficient' },
             { name: 'Xamarin', level: 'high' },
