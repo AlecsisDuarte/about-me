@@ -6,6 +6,14 @@ class Projects extends Component {
 
     projects = [
         {
+            name: 'About Me',
+            github: 'https://github.com/AlecsisDuarte/about-me',
+            playstore: null,
+            url: 'https://about-me.alecsisduarte.now.sh',
+            description: 'React web page (this actual web page) created to showcase some of my projects and to present myself',
+            status: 'active',
+        },
+        {
             name: 'Products List',
             github: 'https://github.com/AlecsisDuarte/flutter_course',
             playstore: 'https://play.google.com/store/apps/details?id=com.duarte.fluttercourse',
@@ -20,14 +28,6 @@ class Projects extends Component {
             url: null,
             description: 'Drowsiness prevental android application',
             status: 'stalled',
-        },
-        {
-            name: 'About Me',
-            github: 'https://github.com/AlecsisDuarte/about-me',
-            playstore: null,
-            url: 'https://about-me.alecsisduarte.now.sh',
-            description: 'React web page (this actual web page) created to showcase some of my projects and to present myself',
-            status: 'active',
         }
     ];
 
