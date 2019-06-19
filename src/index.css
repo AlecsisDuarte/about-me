@@ -19,6 +19,16 @@
   /* Resume */
   --resume-job-date-color: rgb(68, 68, 68);
   --resume-skill-subtitle-color: rgb(68, 68, 68);
+
+  /* Projects */
+  /* Project */
+  --status-active-bg-color: rgb(80, 227, 194);
+  --status-active-color: black;
+  --status-stalled-bg-color: #f1e05a;
+  --status-stalled-color: black;
+  --project-link-color: rgb(68, 68, 68);
+
+
 }
 body {
   margin: 0;
@@ -47,6 +57,16 @@ code {
   Consolas,
   "Courier New",
     monospace;
+}
+
+.code {
+  font-family: 'Fira Mono',
+  source-code-pro,
+  Menlo,
+  Monaco,
+  Consolas,
+  "Courier New",
+  monospace;
 }
 
 #root {
