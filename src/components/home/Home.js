@@ -22,7 +22,9 @@ class Home extends Component {
     }
 
     downloadCV() {
-        window.open(process.env.PUBLIC_URL + 'Alexis Duarte - CV.pdf');
+        const cvURL = 'https://drive.google.com/open?id=1EKv-4gnlUosikyEy_EP7j3fuFSYbU9LS'
+        window.open(cvURL);
+        // window.open(process.env.PUBLIC_URL + 'Alexis Duarte - CV.pdf');
     }
 }
 
