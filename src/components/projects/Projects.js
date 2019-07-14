@@ -1,52 +1,11 @@
 import React, {Component} from 'react';
 import Project from '../project/Project';
+import projects from '../../assets/data/projects.json'
 import './Projects.css';
 
 class Projects extends Component {
 
-    projects = [
-        {
-            name: 'About Me',
-            github: 'https://github.com/AlecsisDuarte/about-me',
-            playstore: null,
-            url: 'https://about-me.alecsisduarte.now.sh',
-            description: 'React web page (this actual web page) created to showcase some of my projects and to present myself',
-            status: 'active',
-        },
-        {
-            name: 'Products List',
-            github: 'https://github.com/AlecsisDuarte/flutter_course',
-            playstore: 'https://play.google.com/store/apps/details?id=com.duarte.fluttercourse',
-            url: null,
-            description: 'Application that allows you to publish your products and also view other users products with their price and position',
-            status: 'active',
-        },
-        {
-            name: 'Oky',
-            github: 'https://github.com/AlecsisDuarte/Oki',
-            playstore: null,
-            url: null,
-            description: 'Drowsiness prevental android application',
-            status: 'stalled',
-        },
-        {
-            name: 'SGE Retriever',
-            github: 'https://github.com/AlecsisDuarte/retrieve-sge',
-            playstore: null,
-            url: null,
-            description: 'Little CLI to validate and retrieve my school control numbers',
-            status: 'stalled',
-        },
-        {
-            name: 'TextIDE',
-            github: 'https://github.com/AlecsisDuarte/AutomatasEditor',
-            playstore: null,
-            url: null,
-            description: 'Small text editor made for a school project using GTK3 toolkit',
-            status: 'stalled',
-        },
-
-    ];
+    // projects =
 
     render() {
         return (
@@ -54,7 +13,7 @@ class Projects extends Component {
                 
                 <div className="projects_wrapper">
                     {
-                        this.projects.map((project, index) =>
+                        projects.map((project, index) =>
                             <Project key={index} title={project.name} description={project.description}
                                 github={project.github} playstore={project.playstore} 
                                 url={project.url} status={project.status}/>
