@@ -22,9 +22,8 @@ class Home extends Component {
     }
 
     downloadCV() {
-        const cvURL = 'https://drive.google.com/open?id=1EKv-4gnlUosikyEy_EP7j3fuFSYbU9LS'
+        const cvURL = 'https://drive.google.com/file/d/19Wh1eonvstYHKfI4VspgiChPS1VQ3Tqp/view'
         window.open(cvURL);
-        // window.open(process.env.PUBLIC_URL + 'Alexis Duarte - CV.pdf');
     }
 }
 
